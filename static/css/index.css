@@ -1,0 +1,38 @@
+header {
+    background-color: blue;
+    overflow: hidden;
+}
+h1 {
+    color: white;
+    font-size: larger;
+}
+body,html {
+    background-color: darkcyan;
+}
+main {
+    background-color: blueviolet;
+}
+.btn {
+    border: 0px;
+    background: gold;
+    padding: 10px 10px;
+    color: white;
+    font-family: Verdana;
+}
+a:link,a {
+    color: white;
+    font-family: Verdana;
+}
+p {
+    color: white;
+    font-family: Verdana;
+}
+div.right {
+    position: relative;
+    float: right;
+    top: -30px;
+    left: -20px;
+}
+.red {
+    color: red;
+}

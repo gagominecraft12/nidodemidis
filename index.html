@@ -1,0 +1,95 @@
+<html>
+<!DOCTYPE html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<link rel='dns-prefetch' href='https://d2bm7x1jqouzel.cloudfront.net' />
+<link rel='dns-prefetch' href='//d3v4eglovri8yt.cloudfront.net' />
+<link rel='stylesheet' href='./static/css/index.css' />
+<link rel='stylesheet' href='./static/css/buttons/index.scss' type="text/scss" />
+
+<title></title>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<meta name='google-site-verification' content='K_niiTfCVi72gwvxK00O4NjsVybMutMUnc-ZnN6HUuA' />
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js' integrity='sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <center>
+                <h1>Nido de MIDIS</h1>
+            </center>
+
+            <div class="right">
+                <a class="btn" title="Index" href="index.html">Index</a>
+            </div>
+            <div class="right">
+                
+                <a class="btn" title="Source Code" href="#" >Source Code</a>
+            </div>
+        </nav>
+    </header>
+<main>
+    <center>
+    <p>A site that downloads midis</p>
+    </center>
+
+    <center>
+        <h1>Audios:</h1>
+
+        <article>
+            <div>
+                <code>Black MIDI (If Blue'ity had a chicken).mid</code> 
+                
+                <a class="btn" href="./static/audio/Black MIDI (If Blue'ity had a chicken).mid">Download</a>
+
+                    </br>
+
+                <p>No audio preview at this time.</p>
+            </div>
+        </br>
+            <div>
+                <code>Blue'ityFMN (P1) [Black MIDI] WIP.mid</code> 
+                
+                <a href="static/audio/Blue'ityFMN (P1) [Black MIDI] WIP.mid" class="btn">Download</a>
+            </br>
+            <p>No audio preview at this time.</p>
+            </div>
+        </br>
+            <div>
+                <code>highest PPQ Pack.dms</code>
+
+                <a href="static/audio/highest PPQ Pack.dms" type="text/dms" class="btn" data-dmsfile="filter">Download</a>
+
+                <p>No audio preview at this time.</p>
+            </div>
+        </br>
+            <div>
+                <code>haha song 2022 version.mid</code>
+                <a href="static/audio/haha song 2022 version.mid" class="btn" onclick="$('div.warningscreen,p.red,a.btn#screen1').show()">Download</a>
+                
+                <p>No audio preview at this time.</p>
+                <div class="warningscreen" style="display: none;">
+                    <p class="red">WARNING: BIG MIDI. CONTAINS INTENSE OVERLAPS.</p>
+                    <a class="btn" id="screen1" href="javascript:$('p.red').hide(), $('div.warningscreen,a.btn#screen1').hide();">OK!</a>
+                </div>
+            </div>
+            <br>
+            <div>
+                <code>TTE Remix- Blacked.mid</code>
+                <a href="static/audio/TTE Remix - Blacked.mid" class="btn" onclick="$('div.warningscreen2').show();">Download</a>
+                <div class="warningscreen2" style="display: none;">
+                    <p class="red">WARNING: The notes you see is mildly overlapped. Please use OmniMIDI and then patch UMP (java.exe) PFA: (PFA.exe)</p>
+                    <a class="btn" id="screen2" href="javascript:$('div.warningscreen2').hide()">OK</a>
+                </div>
+            </div>
+        </article>
+    </center>
+</main>
+<footer>
+</footer>
+</body>
+</html>
