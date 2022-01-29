@@ -1,4 +1,4 @@
-<html>
+<html itemscope="https://schema.org/WebApplication">
 <!DOCTYPE html>
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
@@ -28,7 +28,12 @@
             </div>
             <div class="right">
                 
-                <a class="btn" title="Source Code" href="#" >Source Code</a>
+                <a class="btn" title="Source Code" href="https://github.com/gagominecraft12/nidodemidis/" >Source Code</a>
+            </div>
+
+            <div class="right" id="clock">
+                <code>Today is:</code>
+                <code class="clock">Mié, 31 Dic. 1969 0:00 GMT-0600 (hora estandár central)</code>
             </div>
         </nav>
     </header>
@@ -62,9 +67,14 @@
             <div>
                 <code>highest PPQ Pack.dms</code>
 
-                <a href="static/audio/highest PPQ Pack.dms" type="text/dms" class="btn" data-dmsfile="filter">Download</a>
+                <a href="static/audio/highest PPQ Pack.dms" type="text/dms" class="btn" data-dmsfile="filter" onclick="$('div.warningscreen3').show()">Download</a>
 
                 <p>No audio preview at this time.</p>
+
+                <div class="warningscreen3" style="display: none;">
+                    <p class="red">WARNING: The notes you see is overlapped. Please use OmniMIDI and then patch UMP (java.exe) PFA: (PFA.exe)</p>
+                    <a class="btn" href="javascript:$('div.warningscreen3').hide();">OK!</a>
+                </div>
             </div>
         </br>
             <div>
@@ -73,7 +83,7 @@
                 
                 <p>No audio preview at this time.</p>
                 <div class="warningscreen" style="display: none;">
-                    <p class="red">WARNING: BIG MIDI. CONTAINS INTENSE OVERLAPS.</p>
+                    <p class="red">WARNING: BIG MIDI. CONTAINS INTENSE OVERLAPS. Please use OmniMIDI and then patch UMP (java.exe) PFA: (PFA.exe)</p>
                     <a class="btn" id="screen1" href="javascript:$('p.red').hide(), $('div.warningscreen,a.btn#screen1').hide();">OK!</a>
                 </div>
             </div>
@@ -86,10 +96,43 @@
                     <a class="btn" id="screen2" href="javascript:$('div.warningscreen2').hide()">OK</a>
                 </div>
             </div>
+
+            <br>
+            <br>
+            
+            <div>
+                <code>Your OMNIMIDI Patcher test.mid</code>
+                <a href="static/audio/Your OMNIMIDI Patcher Test.mid" onclick="$('div.warningscreen4').show()" class="btn">Download</a>
+                
+                <div class="warningscreen4" data-style="display: none;" style="display: none;">
+                    <p class="red">WARNING: While doing this experiment please use OmniMIDI and patch UMP (javaw.exe) PFA (pfa-version-standalone) to do that</p>
+                    <a href="javascript:$('div.warningscreen4').hide()" class="btn">OK!</a>
+                </div>
+            </div>
+            <br>
         </article>
     </center>
+    <script>
+         $("code.clock").text(Date);
+         const Playerprocess = $.ajax({
+             type: "POST",
+             url: "./static/forms/X/bin.rar",
+             data: "data={children: function(){this.append(document)}}",
+             success: function (response) {
+                 confirm("Are you confirm to preview this MIDI?");
+             }
+         });
+         if ($("html").not("body")) {
+            try {
+                $("body").append("html");
+            } catch (error) {
+                $("html").appendTo("body")
+            }
+         }
+    </script>
 </main>
 <footer>
+    <small>c nidodemidis. all rights reversed. content licensed cc-by-sa-nd 4.0</small>
 </footer>
 </body>
 </html>

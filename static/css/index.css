@@ -5,6 +5,8 @@ header {
 h1 {
     color: white;
     font-size: larger;
+    font-size: large;
+    font-family: Helvetica;
 }
 body,html {
     background-color: darkcyan;
@@ -35,4 +37,17 @@ div.right {
 }
 .red {
     color: red;
+}
+div.right#clock {
+    text-combine-upright: auto;
+}
+footer {
+    position: fixed;
+    background-color: rgb(50,50,50);
+    background-size:100% 100%;
+    text-align: center;
+    font-variant-ligatures: additional-ligatures;
+}
+code.clock {
+    font-size: small;
 }

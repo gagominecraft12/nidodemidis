@@ -2,6 +2,8 @@ const buttons = require("./buttons");
 buttons.onclick();
 
 
-function MIDIProcess(){document.querySelector("audio#player")}
+export function MIDIProcess(){document.querySelector("audio#player")}
 /////////////////
-function MIDIPlayer(){document.querySelector("audio").play()}
+export function MIDIPlayer(){document.querySelector("audio").play()}
+
+const clock = document.querySelector("code.clockContainer").innerHTML(Date.parse());

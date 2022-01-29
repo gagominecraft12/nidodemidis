@@ -1,0 +1,4 @@
+{
+    "html.trace.server": "off",
+    "C_Cpp.errorSquiggles": "Enabled"
+}
